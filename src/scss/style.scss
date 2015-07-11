@@ -1,0 +1,173 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, form, input, button, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+}
+
+a {
+  color: steelblue;
+}
+
+a:hover, a:active, a:visited {
+  color: #dc4128;
+}
+
+
+.Branding {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+@media (min-width:40em){
+  
+  .Branding {
+    margin-top: 6em;
+  }
+  
+}
+
+.Logo {
+  max-width: 100%;
+}
+
+.Visually-hidden {
+  position: absolute;
+  top: -10000px;
+  width: 1px;
+  height: 1px; 
+}
+
+.Wrap {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  max-width: 30em;
+}
+
+
+
+.Dek {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #bbb;
+  font-weight: 300;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+@media (min-width:40em){
+  .Dek {
+    font-size: 1.6em;
+  }
+}
+
+.Email_form {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+.Email_input, .Email_button {
+  display: block;
+  width: 100%;
+}
+
+.Email_input {
+  border: solid 1px #777;
+  font-size: 1.4em;
+  padding: 0.2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  border-radius: 0.25em;
+  transition-duration: 0.2s;
+}
+
+.Email_input:focus {
+  outline: none;
+  box-shadow: 0 0 0.6em #3498db;
+}
+
+.Email_button {
+  font-size: 1.4em;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0.25em;
+  color: #fff;
+  
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  
+  border: 0;
+  border-radius: 0.25em;
+}
+
+.Email_button:hover, .Email_button:focus {
+  
+  cursor: pointer;
+  
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  
+}
+
+
+#particle_container {
+  
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
+  
+}
+
+
+#particle {
+  position: absolute;
+  top: -10vh;
+  left: -10vw;
+}
+
+
+#pop {
+  
+  opacity: 0;
+  margin-top: 2em;
+  transition-delay: 5s;
+  transition-duration: 1s;
+  
+}
+
+#pop.fadein {
+  
+  opacity: 1;
+  margin-top: 0;
+  
+}
+
