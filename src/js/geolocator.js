@@ -72,7 +72,7 @@ Version: 1.0;
           el.setAttribute("name", key);
           el.setAttribute("value", val);
       
-    document.getElementById("theform").appendChild(el);
+    document.getElementById("mc-embedded-subscribe-form").appendChild(el);
     
   };
   

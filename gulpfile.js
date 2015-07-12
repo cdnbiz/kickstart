@@ -8,7 +8,10 @@ var gulp = require("gulp"),
 gulp.task("default", ["scripts", "styles", "html", "images"]);
 
 gulp.task("watch", function(){
-  gulp.watch("default");
+  gulp.watch("./src/js/*.js", ["scripts"]);
+  gulp.watch("./src/scss/*.scss", ["styles"]);
+  gulp.watch("./src/**/*.html", ["html"]);
+  gulp.watch("./src/img/*.*", ["images"]);
 });
 
 gulp.task("scripts", function(){
@@ -33,7 +36,10 @@ gulp.task("styles", function(){
 gulp.task("html", function(){
   
   gulp.src("./src/**/*.html")
-      .pipe(htmin())
+      .pipe(htmin({
+        collapseWhitespace: true,
+        removeComments: true
+        }))
       .pipe(gulp.dest("./dist"));
   
 });
@@ -41,7 +47,7 @@ gulp.task("html", function(){
 
 gulp.task("images", function(){
   
-  gulp.src("./src/img")
+  gulp.src("./src/img/")
       .pipe(gulp.dest("./dist/img"));
   
 });
