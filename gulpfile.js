@@ -38,7 +38,8 @@ gulp.task("html", function(){
   gulp.src("./src/**/*.html")
       .pipe(htmin({
         collapseWhitespace: true,
-        removeComments: true
+        removeComments: true,
+        minifyJS:true
         }))
       .pipe(gulp.dest("./dist"));
   
