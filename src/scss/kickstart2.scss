@@ -1,0 +1,477 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {  
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+
+
+.Hide-visually {
+  
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+  
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+/* HERO */
+
+.Wrap-hero {
+  
+  min-height: 60vh;
+  background-color: #333333;
+  background-image: radial-gradient(#444444, #111111); 
+}
+
+@media ( min-width: 40em ) {
+  
+  .Wrap-hero {
+    padding-top: 4em;    
+  }
+  
+}
+
+
+
+.Wrap-sell {
+  
+  margin: 0 auto;
+  padding: 3em 1em;
+  max-width: 32em;
+  color: #eee;
+  
+}
+
+.Wrap-sell a {
+  color: #eee;
+}
+
+.Wrap-sell a:hover {
+  color: dodgerblue;
+}
+
+.Sell-dek {
+  font-weight: normal;
+  color: #dc4128;
+  text-align: center;
+}
+
+.Sell-explainer {
+  text-align: center;
+  font-family: Georgia, serif;
+  line-height: 1.4em;
+}
+
+
+
+
+
+
+.Wrap-form {
+  
+  margin: 0 auto;
+  padding: 1em 1em 3em;
+  max-width: 32em;
+  color: #eee;
+  
+}
+
+
+.Wrap-form input,
+.Wrap-form label {
+  
+  display: block;
+  width: 100%;
+  
+}
+
+
+.Form-label {
+  text-align: center;
+}
+
+.Form-email {
+  
+  font-size: 1.6em;
+  margin: 0.25em 0 0.75em 0;
+  padding: 0.3em;
+  border: solid 4px #333;
+  border-radius: 0.25em;
+  text-align: center;
+  
+  transition-property: transform border-color;
+  transition-duration: 0.2s;
+  
+}
+
+.Form-email:focus {
+  
+/*   transform: scale(1.05); */
+  outline: none;
+  border: solid 4px #dc4128;
+}
+
+
+.Form-submit {
+  
+  padding: 1em 2em;
+  background-color: #dc4128;
+  color: #eee;
+  
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.25em;
+  
+  box-shadow: 0 4px 6px #222;
+  
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  
+  cursor: pointer;
+  
+}
+
+.Form-submit:hover,
+.Form-submit:focus {
+  background-color: dodgerblue;
+  outline: none;
+}
+
+
+
+
+
+/* TESTIMONIALS PANEL */
+
+  
+  .Wrap-testimonials {
+    margin: 0;
+    padding: 2em 0;
+    position: relative;
+    background-color: #dc4128;
+    width: 100%;
+  }
+  
+  .Testimonial-label {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+  }
+  
+  .Testimonial-intro {
+    color: #000;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+  }
+  
+  .Testimonial {
+    margin: 0 auto;
+    padding: 2em 0;
+    max-width: 40em;
+  }
+  
+  .Testimonial-text {
+    margin: 1em;
+    font-size: 1.4em;
+    font-family: Georgia, serif;
+    color: #eee;
+  }
+  
+  .Testimonial-name {
+    text-align: center;
+    font-size: 1em;
+    font-family: Georgia, serif;
+    color: #000;
+    font-style: italic;
+  }
+  
+  @media (min-width: 40em) {
+    
+    .Testimonial-text {
+      font-size: 1.8em;
+    }
+    .Testimonial-name {
+      font-size: 1.4em;
+    }
+    
+  }  
+
+  
+
+/* THANKS */
+
+.Wrap-thanks {
+  
+  margin: 0 auto;
+  padding: 1em 1em 5em;
+  max-width: 32em;
+  color: #eee;
+  
+}
+
+.Wrap-thanks a {
+  color: #eee;
+}
+
+.Wrap-thanks a:hover {
+  color: dodgerblue;
+}
+
+/* CONFIRMATION */
+
+.Wrap-confirmation {
+  
+  margin: 0 auto;
+  padding: 1em 1em 5em;
+  max-width: 32em;
+  color: #eee;
+  
+}
+
+.Wrap-confirmation a {
+  color: #eee;
+}
+
+.Wrap-confirmation a:hover {
+  color: dodgerblue;
+}
+
+
+/* LATEST PANEL */
+
+.do-not-show {
+  
+  display: none;
+  
+}
+
+.Wrap-latest {
+  
+  margin: 0;
+  padding: 2em 4em;
+  width: 100%;
+  
+  font-family: Georgia, serif;
+  background: #eee;
+  color: #444;
+  text-align: center;
+}
+
+.Latest-label {
+  
+  font-family: sans-serif;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}  
+
+.Latest-date {
+  font-style: italic;
+}  
+
+
+@media ( min-width: 60em ) {
+
+  .Latest-hed {
+    
+    font-size: 4em;
+    
+  }
+
+}
+
+
+.Latest-link {
+  
+  color: #dc4128;
+  text-decoration: none;
+  
+  transition-property: color;
+  transition-duration: 0.2s;
+  
+}
+
+.Latest-link:hover {
+  
+  color: dodgerblue;    
+}
+
+.Latest-button {
+  
+  display: inline-block;
+  padding: 1em 2em;
+  background: #dc4128;
+  color: #eee;
+  
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.25em;
+  
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  
+}
+
+.Latest-button:hover {
+  background: dodgerblue;
+}
+
+
+
+
+
+/* Footer */
+
+
+.Wrap-footer {
+  
+  margin: 0;
+  padding: 4em;
+  
+  font-family: sans-serif;
+  background: #333;
+  color: #aaa;
+  
+}
+
+.Wrap-footer ul {
+  margin: 0;
+  padding: 0 0 1em;
+  list-style: none;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.Wrap-footer p a,
+.Wrap-footer ul li a {
+  color: #aaa;
+}
+
+.Wrap-footer p a:hover,
+.Wrap-footer ul li a:hover {
+  color: #dc4128;
+}
+
+
+.Wrap-footer p {
+  
+  margin: 0;
+  font-size: 0.8em;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+  
+}
+
+.Wrap-footer p:first-child {
+  padding-top: 0;
+}
+
+.Wrap-footer h3 {
+  font-size: 1em;
+  margin-top: 0;  
+}
+
+
+.Wrap-footer dt,
+.Wrap-footer dl {
+  margin: 0;
+  padding: 0;
+}
+
+.Footer-masthead {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.Footer-masthead > dt {
+  font-weight: bold;
+}
+
+.Footer-masthead > dl {
+  padding-bottom: 1em;
+}
+
+.Footer-subscribe,
+.Footer-unsubscribe {
+  
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 1em 2em;
+  color: #eee;
+  
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.25em;
+  
+  box-shadow: 0 4px 6px #222;
+  
+  transition-property: background-color;
+  transition-duration: 0.2s; 
+  
+}
+
+.Footer-subscribe {
+  background-color: royalblue;
+}
+
+.Footer-unsubscribe {
+  background-color: darkred;
+  margin-bottom: 2em;
+}
+
+.Footer-subscribe:hover {
+  background-color: dodgerblue;
+}
+
+.Footer-unsubscribe:hover {
+  background-color: crimson;  
+}
+
+
+@media ( min-width: 40em ) {
+  
+  .Wrap-footer {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .Footer-column {
+    width: 30%;
+    max-width: 20em;
+  }
+  
+}
+
+
+

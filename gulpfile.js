@@ -1,7 +1,9 @@
 var gulp = require("gulp"),
     concat = require("gulp-concat"),
     sass = require("gulp-sass"),
-    cssmin = require("gulp-minify-css"),
+    // developer has deprecated and recommended cssnano instead
+    // cssmin = require("gulp-minify-css"),
+    cssnano = require("gulp-cssnano"),
     htmin = require("gulp-htmlmin"),
     uglify = require("gulp-uglify");
 
@@ -28,7 +30,7 @@ gulp.task("styles", function(){
   gulp.src("./src/scss/*.scss")
       .pipe(concat("style.css"))
       .pipe(sass())
-      .pipe(cssmin())
+      .pipe(cssnano())
       .pipe(gulp.dest("./dist/css"));
   
 });
