@@ -22,7 +22,7 @@ Version: 1.0;
       var request = new XMLHttpRequest();
       
       // Free GeoIP server. See Telize.com for details
-      request.open("GET", "https://telize.com/geoip", true);
+      request.open("GET", "https://freegeoip.net/json/?callback=", true);
       request.onload = function(){
         if(request.status >= 200 && request.status < 400 ){
           
@@ -53,7 +53,7 @@ Version: 1.0;
       inserter("LONGITUDE", data.longitude);
       inserter("LATITUDE", data.latitude);
       inserter("CITY", data.city);
-      inserter("REGION", data.region);
+      inserter("REGION", data.region_name);
       inserter("COUNTRY", data.country_code);
       
       // Iterate over the data object to retrieve keys and values for each one
