@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
 }
 
-a {  
+a {
   transition-property: color;
   transition-duration: 0.2s;
 }
@@ -16,11 +16,11 @@ a {
 
 
 .Hide-visually {
-  
+
   opacity: 0;
   position: absolute;
   left: -9999px;
-  
+
 }
 
 img {
@@ -33,29 +33,29 @@ img {
 /* HERO */
 
 .Wrap-hero {
-  
+
   min-height: 60vh;
   background-color: #333333;
-  background-image: radial-gradient(#444444, #111111); 
+  background-image: radial-gradient(#444444, #111111);
 }
 
 @media ( min-width: 40em ) {
-  
+
   .Wrap-hero {
-    padding-top: 4em;    
+    padding-top: 4em;
   }
-  
+
 }
 
 
 
 .Wrap-sell {
-  
+
   margin: 0 auto;
   padding: 3em 1em;
   max-width: 32em;
   color: #eee;
-  
+
 }
 
 .Wrap-sell a {
@@ -84,21 +84,21 @@ img {
 
 
 .Wrap-form {
-  
+
   margin: 0 auto;
   padding: 1em 1em 3em;
   max-width: 32em;
   color: #eee;
-  
+
 }
 
 
 .Wrap-form input,
 .Wrap-form label {
-  
+
   display: block;
   width: 100%;
-  
+
 }
 
 
@@ -107,21 +107,21 @@ img {
 }
 
 .Form-email {
-  
+
   font-size: 1.6em;
   margin: 0.25em 0 0.75em 0;
   padding: 0.3em;
   border: solid 4px #333;
   border-radius: 0.25em;
   text-align: center;
-  
+
   transition-property: transform border-color;
   transition-duration: 0.2s;
-  
+
 }
 
 .Form-email:focus {
-  
+
 /*   transform: scale(1.05); */
   outline: none;
   border: solid 4px #dc4128;
@@ -129,25 +129,25 @@ img {
 
 
 .Form-submit {
-  
+
   padding: 1em 2em;
   background-color: #dc4128;
   color: #eee;
-  
+
   font-family: sans-serif;
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
   border: none;
   border-radius: 0.25em;
-  
+
   box-shadow: 0 4px 6px #222;
-  
+
   transition-property: background-color;
   transition-duration: 0.2s;
-  
+
   cursor: pointer;
-  
+
 }
 
 .Form-submit:hover,
@@ -162,7 +162,7 @@ img {
 
 /* TESTIMONIALS PANEL */
 
-  
+
   .Wrap-testimonials {
     margin: 0;
     padding: 2em 0;
@@ -170,7 +170,7 @@ img {
     background-color: #dc4128;
     width: 100%;
   }
-  
+
   .Testimonial-label {
     text-align: center;
     font-size: 0.7em;
@@ -178,27 +178,27 @@ img {
     text-transform: uppercase;
     color: #000;
   }
-  
+
   .Testimonial-intro {
     color: #000;
     text-align: center;
     font-family: Georgia, serif;
     font-style: italic;
   }
-  
+
   .Testimonial {
     margin: 0 auto;
     padding: 2em 0;
     max-width: 40em;
   }
-  
+
   .Testimonial-text {
     margin: 1em;
     font-size: 1.4em;
     font-family: Georgia, serif;
     color: #eee;
   }
-  
+
   .Testimonial-name {
     text-align: center;
     font-size: 1em;
@@ -206,29 +206,29 @@ img {
     color: #000;
     font-style: italic;
   }
-  
+
   @media (min-width: 40em) {
-    
+
     .Testimonial-text {
       font-size: 1.8em;
     }
     .Testimonial-name {
       font-size: 1.4em;
     }
-    
-  }  
 
-  
+  }
+
+
 
 /* THANKS */
 
 .Wrap-thanks {
-  
+
   margin: 0 auto;
   padding: 1em 1em 5em;
   max-width: 32em;
   color: #eee;
-  
+
 }
 
 .Wrap-thanks a {
@@ -242,12 +242,12 @@ img {
 /* CONFIRMATION */
 
 .Wrap-confirmation {
-  
+
   margin: 0 auto;
   padding: 1em 1em 5em;
   max-width: 32em;
   color: #eee;
-  
+
 }
 
 .Wrap-confirmation a {
@@ -262,17 +262,17 @@ img {
 /* LATEST PANEL */
 
 .do-not-show {
-  
+
   display: none;
-  
+
 }
 
 .Wrap-latest {
-  
+
   margin: 0;
   padding: 2em 4em;
   width: 100%;
-  
+
   font-family: Georgia, serif;
   background: #eee;
   color: #444;
@@ -280,62 +280,62 @@ img {
 }
 
 .Latest-label {
-  
+
   font-family: sans-serif;
   font-size: 0.7em;
   font-weight: bold;
   text-transform: uppercase;
-  
-}  
+
+}
 
 .Latest-date {
   font-style: italic;
-}  
+}
 
 
 @media ( min-width: 60em ) {
 
   .Latest-hed {
-    
+
     font-size: 4em;
-    
+
   }
 
 }
 
 
 .Latest-link {
-  
+
   color: #dc4128;
   text-decoration: none;
-  
+
   transition-property: color;
   transition-duration: 0.2s;
-  
+
 }
 
 .Latest-link:hover {
-  
-  color: dodgerblue;    
+
+  color: dodgerblue;
 }
 
 .Latest-button {
-  
+
   display: inline-block;
   padding: 1em 2em;
   background: #dc4128;
   color: #eee;
-  
+
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
   border-radius: 0.25em;
-  
+
   box-shadow: 0 3px 8px rgba(0,0,0,0.5);
-  
+
   transition-property: background-color;
   transition-duration: 0.2s;
-  
+
 }
 
 .Latest-button:hover {
@@ -350,14 +350,14 @@ img {
 
 
 .Wrap-footer {
-  
+
   margin: 0;
   padding: 4em;
-  
+
   font-family: sans-serif;
   background: #333;
   color: #aaa;
-  
+
 }
 
 .Wrap-footer ul {
@@ -380,12 +380,12 @@ img {
 
 
 .Wrap-footer p {
-  
+
   margin: 0;
   font-size: 0.8em;
   padding-bottom: 1em;
   line-height: 1.4em;
-  
+
 }
 
 .Wrap-footer p:first-child {
@@ -394,7 +394,7 @@ img {
 
 .Wrap-footer h3 {
   font-size: 1em;
-  margin-top: 0;  
+  margin-top: 0;
 }
 
 
@@ -420,22 +420,22 @@ img {
 
 .Footer-subscribe,
 .Footer-unsubscribe {
-  
+
   display: block;
   margin-bottom: 0.5em;
   padding: 1em 2em;
   color: #eee;
-  
+
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
   border-radius: 0.25em;
-  
+
   box-shadow: 0 4px 6px #222;
-  
+
   transition-property: background-color;
-  transition-duration: 0.2s; 
-  
+  transition-duration: 0.2s;
+
 }
 
 .Footer-subscribe {
@@ -452,26 +452,23 @@ img {
 }
 
 .Footer-unsubscribe:hover {
-  background-color: crimson;  
+  background-color: crimson;
 }
 
 
 @media ( min-width: 40em ) {
-  
+
   .Wrap-footer {
-    
+
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    
+
   }
-  
+
   .Footer-column {
     width: 30%;
     max-width: 20em;
   }
-  
+
 }
-
-
-
