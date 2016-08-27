@@ -1,14 +1,12 @@
 var gulp = require("gulp"),
     concat = require("gulp-concat"),
     sass = require("gulp-sass"),
-    // developer has deprecated and recommended cssnano instead
-    // cssmin = require("gulp-minify-css"),
     cssnano = require("gulp-cssnano"),
     inlinesrc = require("gulp-inline-source"),
     htmin = require("gulp-htmlmin"),
     uglify = require("gulp-uglify");
 
-gulp.task("default", ["scripts", "styles", "html", "images", "inline"]);
+gulp.task("default", ["scripts", "styles", "html", "images"]);
 
 gulp.task("watch", function(){
   gulp.watch("./src/js/*.js", ["scripts"]);
@@ -56,9 +54,8 @@ gulp.task("images", function(){
 
 });
 
-// Gulp task to inline css for faster rendering
+// Gulp task to inline css and js for faster rendering
 gulp.task("inline", function(){
-
 gulp.src("./dist/**/*.html")
   .pipe(inlinesrc())
   .pipe(gulp.dest("./dist"));
