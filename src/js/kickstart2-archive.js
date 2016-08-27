@@ -17,8 +17,7 @@ var init,
 // It fetches the one most recently sent campaign, and passes us the subject line, the URL, and the pubDate
 // http://developer.yahoo.com/yql/console/?q=select%20title%2Clink%2CpubDate%20from%20rss%20where%20url%3D%22http%3A%2F%2Fus10.campaign-archive1.com%2Ffeed%3Fu%3Debf3e41c7fc04417e82e6e1d2%26id%3D34bbc0b261%22%20limit%201
 
-query = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2C%20link%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.feedburner.com%2FVxwpSGUxm83oMeiSlUusI7FpGUrXzUeIQ6H9tVc182Y73OdGApGcIljn3AIiDoJ%22%20limit%201&format=json&callback=";
-
+query = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2C%20link%2C%20pubDate%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.feedburner.com%2FVxwpSGUxm83oMeiSlUusI7FpGUrXzUeIQ6H9tVc182Y73OdGApGcIljn3AIiDoJ%22%20limit%201&format=json&callback=";
 
 // FUNCTION: fetch
 // Ajax function to get the data
