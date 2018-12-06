@@ -6,7 +6,7 @@ var gulp = require("gulp"),
     htmin = require("gulp-htmlmin"),
     uglify = require("gulp-uglify");
 
-gulp.task("default", ["scripts", "styles", "html", "images"]);
+gulp.task("default", ["scripts", "styles", "html", "images", "redirect"]);
 
 gulp.task("watch", function(){
   gulp.watch("./src/js/*.js", ["scripts"]);
@@ -51,6 +51,13 @@ gulp.task("images", function(){
 
   gulp.src("./src/img/*")
       .pipe(gulp.dest("./dist/img"));
+
+});
+
+gulp.task("redirect", function(){
+
+  gulp.src("./src/_redirect")
+      .pipe(gulp.dest("./dist"));
 
 });
 
