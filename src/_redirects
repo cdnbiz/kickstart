@@ -1,0 +1,3 @@
+# Netlify redirect back to CanadianBusiness.com
+# https://www.netlify.com/docs/redirects/
+/     https://www.canadianbusiness.com
