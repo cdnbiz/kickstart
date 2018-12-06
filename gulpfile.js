@@ -56,7 +56,7 @@ gulp.task("images", function(){
 
 gulp.task("redirect", function(){
 
-  gulp.src("./src/_redirect")
+  gulp.src("./src/_redirects")
       .pipe(gulp.dest("./dist"));
 
 });
